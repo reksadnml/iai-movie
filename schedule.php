@@ -29,8 +29,9 @@ foreach($schedule as $p){
                      <p> Airdate : " . $p->airdate . " </p>
                      <p> Airtime : " . $p->airtime . " </p>
                      <p> Runtime : " . $p->runtime . " Minutes "."</p>
+                     <p> Type : " . $p->show->type . " </p>
                      <p> Language : " . $p->show->language . " </p>
-                     <p> Network : " . $p->show->network->name . " </p>
+                     
                      <p><a href=" . $p->show->officialSite . ">Watch</a></p>
                     </div>
                   </a>
