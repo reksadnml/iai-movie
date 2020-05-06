@@ -8,7 +8,7 @@
 </style>
 <div class="card">
         <div class="card-header">
-          <h3 class="text-center">- News  -</h3>
+          <h3 class="text-center">- Articles  -</h3>
           </div>
         </div>
 <div class="row">
@@ -16,7 +16,7 @@
         include_once "api/api_news.php";
 foreach($newss->items as $p){
           echo '
-          <div class="col-lg-3">
+          <div class="col-lg-3.5">
             <div class="card">
               <div class="card-group">
                 <div class="card text-center" style="width: 300px;">
@@ -25,7 +25,7 @@ foreach($newss->items as $p){
                       <h5 class="card-title">' . $p->head . "
                        (" . substr($p->publishDateTime, 0, 4) . ")</h5>
                        <p><em> " . $p->body . " <br><a href=" . $p->link . ">Read More</a></em></p>
-
+                       
                     </div>
                   </a>
                 </div>
