@@ -1,6 +1,6 @@
 <?php
   include "conf/info.php";
-  $title="Popular Movies";
+  $title="Articles";
   include_once "header.php";
 ?>
 <style>
